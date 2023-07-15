@@ -2,7 +2,7 @@
 FROM python:3.6
 
 # Maintainer information
-LABEL maintainer="João Francisco <jooao>"
+LABEL maintainer="João Francisco <joaofrancisco.monteiro11@gmail.com>"
 
 # Create the "www" user and create directories "/app" and "/log"
 RUN useradd www && \
@@ -15,6 +15,8 @@ USER www
 
 # Define a volume for the directory "/log" (optional, allows sharing data with the host)
 VOLUME /log
+
+COPY * /app
 
 # Set the working directory to "/app"
 WORKDIR /app
