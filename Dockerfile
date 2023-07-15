@@ -17,7 +17,7 @@ USER www
 VOLUME /log
 
 # Copy all files to the "/app" directory
-COPY * /app                      # Copy all files from the host's current directory to the "/app" directory inside the container
+COPY * /app                      # Copy all files from the hosts current directory to the /app directory inside the container
 
 # Set the working directory to "/app"
 WORKDIR /app
