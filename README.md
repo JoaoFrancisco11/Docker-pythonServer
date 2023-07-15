@@ -12,7 +12,7 @@ cd Docker-pythonServer
 
 2.**Build the Docker image**:
 ```
-docker build -t build-py-server .
+docker build -t build-py-server 
 ```
 3.**Run the Docker container**:
 ```
