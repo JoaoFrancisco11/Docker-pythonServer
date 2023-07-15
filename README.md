@@ -1,2 +1,2 @@
 # Docker-pythonServer
-Criação de um descritor (Dockerfile) para  fazer com que o servidor em python seja executado e servir a página html criada.
+Este é um repositório que contém uma aplicação simples em Python com um servidor web que serve uma página HTML estática. A principal vantagem deste repositório é que ele já vem com um Dockerfile configurado, permitindo que você crie um contêiner Docker facilmente para executar a aplicação.
