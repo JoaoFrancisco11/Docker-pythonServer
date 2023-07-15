@@ -16,7 +16,8 @@ USER www
 # Define a volume for the directory "/log" (optional, allows sharing data with the host)
 VOLUME /log
 
-COPY * /app
+# Copy all files to the "/app" directory
+COPY * /app                      # Copy all files from the host's current directory to the "/app" directory inside the container
 
 # Set the working directory to "/app"
 WORKDIR /app
