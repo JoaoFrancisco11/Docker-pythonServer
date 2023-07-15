@@ -22,7 +22,7 @@ In my case, I prefer to use port 80, so I used the following command:
 ```
 docker container run -it -p 80:8000 --name python-server build-py-server
 ```
-#### 4 Access the web server:
+4. **access the web server**:
 
 Open your web browser and go to 
 ``` 
@@ -32,6 +32,10 @@ to view the static HTML page served by the Python web server. In my case:
 ``` 
 http://localhost:80
 ```
+5.**Result**: 
+<p>As observed in the log, the server's access log provides the following information: timestamp, machine's IP address, access date and time, and server response code.</p>
+
+![Server Response](https://github.com/JoaoFrancisco11/Docker-pythonServer/blob/9ee6b152f57359898dc57c2adbf8640bf0c56518/Resultado.png)
 
 ## Python Code
 The Python code inside the run.py file sets up a basic HTTP server using the built-in http.server module. It serves the static HTML page and customizes the logging of incoming requests. The server will run indefinitely and listen on port 8000 inside the Docker container.
